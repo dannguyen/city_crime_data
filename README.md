@@ -1,60 +1,15 @@
-# pydataproject-template
-
-**Dan's template for Python-based data-wrangling projects**
-
-## Why? 
-
-Because I always forget how to do this stuff, when starting new projects... :(
-
-## How to use
-
-Clone this repo and install `myfoo` as a local project:
-
-```sh
-$ git clone https://github.com/dannguyen/pydataproject-template.git
-$ cd pydataproject-template
-$ pip install -e .
-$ python myfoo  # prints hello world
-```
-
-To see an example of how the [Makefile](Makefile) executes the data-processing pipeline, e.g. creating the `data/sqlized.sqlite` database from [data/stashed/hello.txt](data/stashed/hello.txt):
-
-```sh
-$ make ALL
-```
+# city crime data collection
 
 
-To run tests:
-
-```sh
-$ pytest
-```
-
-
-
-## Examples in action
-
-- https://github.com/storydrivendatasets/white_house_salaries
-
-
-## Tree inventory
-
-```
-├── data
-|   ├── data-manifest.yaml  -- lightweight log of where you got your data
-|   ├── sqlized.sqlite      -- a quick database created by `make sqlize`
-|   | 
-│   ├── stashed             -- store your original and immutable datafiles here
-│   └── wrangled            -- the end-result of wrangling, ideally csv files
-|
-├── myfoo                   -- python package for data processing scripts
-├── scripts                 -- helper scripts, not necessarily python
-└── tests                   -- tests for your python package
-```
-
-
-## Resources
-
-- This [great answer to the question, *Importing modules from parent folder*](https://stackoverflow.com/a/50194143/160863), is something I always forget how to do.
-
-
+- Chicago, 2001 to present: https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2
+- NYC
+  - YTD: https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Current-Year-To-Date-/5uac-w243/data
+  - 2006 to 2017: https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Historic/qgea-i56i
+- SF
+  - 2003 to 2018: https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-Historical-2003/tmnf-yvry
+  - 2018 to present: https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783
+- Dallas, 2014 to present: https://www.dallasopendata.com/Public-Safety/Police-Incidents/qv6i-rri7
+- BPD, Victim Based: https://data.baltimorecity.gov/Public-Safety/BPD-Part-1-Victim-Based-Crime-Data/wsfq-mvij/data
+- Los Angeles, 2010 to present: https://data.lacity.org/A-Safe-City/Crime-Data-from-2010-to-Present/63jg-8b9z
+- Tacoma: https://data.cityoftacoma.org/Public-Safety/Tacoma-Crime/wtqi-kpsn/data
+- Orlando: https://data.cityoforlando.net/Orlando-Police/OPD-Crimes-Data-Lens/cmgh-vsxe
